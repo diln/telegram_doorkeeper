@@ -11,6 +11,5 @@ docker build . -t telegram_doorkeeper
 docker run -d --restart unless-stopped \
 --name telegram_doorkeeper_bot \
 -e bot_token={TOKEN} \
--e sheet_id={SHEET_ID} \
 telegram_doorkeeper
 ```
